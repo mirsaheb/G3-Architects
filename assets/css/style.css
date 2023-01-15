@@ -73,7 +73,7 @@ nav ul li a{
     width: 180px;
     height: 64px;
     color: #fff;
-font-size: 20px;
+    font-size: 20px;
     margin-top: 50px;
 }
 
@@ -161,14 +161,12 @@ header .banner img{
     background-color: #FF900E;margin-right: 20px;
 
 }
-
 .lovely-info p{
     color:  #727272;
     font-size: 16px;
     line-height: 26px;
     margin-top: 20px;
 }
-
 .lovely-features .features .feature {
     padding: 20px;
     box-shadow: 1px 1px 14px 1px #f0efef;
@@ -181,8 +179,6 @@ header .banner img{
   .lovely-features .features .feature p {
    margin-top: 10px;
   }
-
-
 .lovely-thumbnail img {
     width: 100%;
     position: relative;
@@ -203,22 +199,18 @@ header .banner img{
     flex-direction: column;
     justify-content: center;
 }
-
 .Experience h1{
     font-weight: 700;
 font-size: 65px;
 line-height: 70px;
 color: #fff;
 }
-
 .Experience p{
     font-weight: 500;
 font-size: 25px;
 line-height: 40px;
 color: #fff;
 }
-
-
 
 .some-facts h1{
     font-weight: 700;
@@ -232,11 +224,8 @@ line-height: 53px;
     margin: 20px auto;
 }
 .facts{
-    
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-   
-   
     margin: 100px 50px;
 }
 .fact{
@@ -255,8 +244,6 @@ height: 200px;
     border: 1px solid #4000ff;
     
 }
-
-
 .sponsors-images{
     display: flex;
     justify-content: space-between;
@@ -310,7 +297,7 @@ border: 1px solid #ff900e;
 
     
 }
-button{
+.subscribe button{
     background-color: #FF900E;
     border: none;
     border-radius: 5px;
@@ -335,7 +322,101 @@ width: 100%;
 background-color: #FFF4E7;
 margin-bottom: 220px;
 
+}
 
 
+/* media Query */
+
+
+@media  (max-width:576px) {
+  
+   
+    header{
+        width: 576px;
+    }
+    .container{
+       width: 575px;
+    }
+    button{
+       
+        width: 150px;
+        height: 55px;
+        color: #fff;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+nav{
+    flex-direction: column;
+}
+.header-info h1 {
+    font-size: 40px;
+    max-width: 576px;
+    margin: 110px auto 0;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+  }
+.header-info p {
+   
+  width: 570px;
+    margin: 20px;
+  }
+header .banner {
+    max-width: 570px;
+    margin: 0 auto;
+    padding: 45px;
+  }
+  header .banner img {
+    max-width: 490px;
+  }
+.our-features {
+  flex-direction: column-reverse;
+  }
+  .feature-images, .feature-info {
+    width: 100%
+  }
+  .feature-images {
+   
+    grid-template-columns: repeat(1, 1fr);
+    
+    margin-top: 30px;
+  }
+  .lovely-features {
+   
+    flex-direction: column;
+  }
+  .lovely-features .lovely-info {
+    width: 575px;
+    padding: 20px;
+}
+  .lovely-thumbnail {
+    width: 100%;
+    margin: 20px;
+  }
+
+  .Experience {
+    top: -75px;
+    left: 0;
+  }
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  
+    row-gap: 30px;
+  }
+  .sponsors-images {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+    flex-direction: column;
+  }
+  footer p{
+ 
+    font-size: 15px;
+    line-height: 40px;
+    margin-bottom: 220px;
+  }
 
 }
